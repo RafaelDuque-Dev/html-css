@@ -1,0 +1,491 @@
+GitHub
+https://github.com/gustavoguanabara
+
+================================================================
+
+Bibiografia:
+
+Sites:
+MDN https://developer.mozilla.org/pt-BR/
+W3C https://www.w3schools.com/
+
+Livros:
+Oreilly - HTML5 - CSS - FLEXBOX IN CSS - GRIG LAYOUT IN CSS
+HTML&CSS - Jon Duckett
+
+================================================================
+
+HISTORIA DA INTERNET
+
+* Guerra Fria
+TCP/IP - Atual Protocolo em 1972
+Surgiu para proteger centros militares
+Rede de intercomunicação - Interconnect Networking - Internetworking - Internet
+
+Protocolo https://
+HTML
+www
+Navegador
+
+================================================================
+
+COMO INTERNET FUNCIONA
+
+Digitos Binarios - bit
+01000001 - 8bits - 1 Byte
+Codigo multibyte UTF-8
+
+MB - Armazenamento
+Mb - Navegação
+
+https://www.iplocation.net/
+Servidores DNS - Ligação entre nomes e numeros
+
+================================================================
+
+HOSPEDAGEM E DOMINIO
+
+DOMINIO
+  Nome unico
+  Pago anualmente
+  Varios TDLs
+
+HOSPEDAGEM
+  Espaço para Armazenar arquivos
+  Pago mensalmente
+  Espaço, memoria, recursos
+
+================================================================
+
+HTML - Conteudo
+CSS - Design
+JAVASCRIPT - Interações
+
+================================================================
+
+FRONT-END - Desenvolve para o lado do cliente;
+BACK-END - Desenvolve para o lado dos Servidores;
+FULL STACK -Desenvolve tanto pra FRONT e BACK;
+
+================================================================
+
+TIPO IMAGEM
+  JPEG QUALIDADE
+  PNG TRANPARENCIA
+
+TAMANHO DE IMAGEM
+  MAXIMO 1500px
+
+DIMINUIR TAMANHO PARA MELHOR Navegação
+
+================================================================
+
+LISTAS EM HTML
+
+TAG "ol" para listas ordenadas
+TIPOS: 
+  1
+  A
+  a
+  I
+  i
+
+TAG "ul" para listas não ordenadas
+TIPOS: 
+ disc
+ circle
+ square
+
+  TAG "dl" para listas de definição
+  Tag "dt" para o titulo
+  Tag "dd" para descrição
+
+================================================================
+LINKS
+
+Links externos
+  <a href="https://github.com/gustavoguanabara" target="_blank" rel="noopener">repositorio no GitHub.</a>
+
+nofollow para casos de nao se vincular com o link
+
+Como funciona o rel="noopener"?
+Isolamento: Ao adicionar rel="noopener" a um link, você está basicamente dizendo ao navegador: "Abra esta página em uma nova janela, mas isole-a completamente da janela original". Isso significa que a nova página não poderá acessar cookies, variáveis locais ou outras informações da página que a abriu.
+
+Links internos
+  <p>Esta é a primeira pagina mas se quiser acessar a minha <a href="pag002.html">segunda pagina</a></p>
+
+Links para download
+  PDF
+    <li><a href="livro/10 - Ligações em toda parte.pdf" type="application/pdf" target="_blank">Baixar livro em PDF</a></li>
+  ZIP
+    <li><a href="livro/meu-livro.zip" download="meu-livro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+
+===============================================================
+IMAGENS DINAMICAS (Carregando tamanhos diferentes de imagens)
+
+  <picture>
+    <source media="(max-width: 700px)" srcset="img/foto-p.png" type="image/png">
+    <source media="(max-width: 1000px)" srcset="img/foto-m.png" type="image/png">
+    <img src="img/foto-g.png" alt="Grande Flexivel">
+  </picture>
+
+===============================================================
+AUDIO
+
+  <audio src="audio/LonelyMan-AlexHamlin.mp3" controls></audio>
+
+  <audio controls>
+    <source src="audio/KeysToUnravel-TheSoundlings.mp3" type="audio/mp3"> 
+  </audio>
+
+===============================================================
+VIDEOS
+
+  Videos Internos:
+    <video id="video" controls preload="auto" autoplay loop>
+      <source src="video/Meu-Video-social.mp4" type="video/mp4">
+      <source src="video/Meu-Video-social.mkv" type="video/mkv">
+
+      <!-- Para carregar legenda ddo video-->
+      <track label="English" kind="captions" srclang="en" default>
+    </video>
+
+  Videos Externos:
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HWu1tz3oOqk?si=EwsaYGum36-xZ-ie&amp;start=9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+=============================================================
+CSS Inline
+  <body style="background-color: rgba(0, 0, 0, 0.856); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; color: white;"></body>
+
+CSS Internos
+  <style>
+    h1 {
+      font-size: 3em;
+    }
+    h2 { 
+      font-size: 2.2em
+    }
+    p {
+      font-size: 1.5em;
+    }
+  </style>
+
+CSS externos
+  Arquivo style.css
+    body {
+      background-color: #000000c5;
+      color: white;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+============================================================
+PSICOLOGIA DAS CORES
+
+Cores tem significado 
+
+Representação das Cores
+  Nome: 
+    blue
+  Codigo hexadecimal:
+    #0000ff
+  RGB:
+    rgb(0, 0, 255)
+  HSL:
+    hsl(240, 100%, 50%)
+
+
+Circulo Cromático
+  Harmonia
+  Cores Primarias
+    Amarelo
+    Vermelho
+    Azul
+  Cores Secundarias
+    Verde
+    Laranja
+    Violeta
+  Cores Terciárias
+    Todas as outras misturas de secundarias e primaria
+
+Cores Frias e Quentes
+
+============================================================
+
+FERRAMENTAS PALHETAS DE CORES
+  Adobe Color
+  Color Hunt
+
+CAPTURA DE CORES
+  Extenção ColorZilla
+
+CORES DEGRADE (Gradiente)
+
+  background-image: linear-gradient(to right, #EB5A3C, #4B164C, #578E7E, #3D3D3D);
+  background-image: linear-gradient(45deg, #EB5A3C, #4B164C, #578E7E, #3D3D3D);
+  background-image: linear-gradient(90deg, #FFFAEC, #F5ECD5, #578E7E, #3D3D3D);
+  background-image: linear-gradient(-45deg, #EB5A3C 10%, #4B164C, #578E7E, #3D3D3D 40%);
+  background-attachment: fixed;
+
+=========================================================== 
+
+TIPOGRAFIA
+
+  Melhor visibilidade das letras.
+
+ANATOMIA DO TIPO
+
+  Melhor fonte para determinado lugar.
+
+  Altura-x = Alturadas letras minusculas. [x]
+  Altura das maiusculas = Altura das lestras maiusculas. [A]
+  Ascendente = Sobra de cima da letra minuscula. [b]
+  Descendende =  sobra de baixo da letra minuscula. [q]
+  Corpo = Soma da Altura
+
+================================================================
+
+FONTES
+
+  Selecionar fonte
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  Tamanhos de fonte
+    Medidas Absolutas
+      cm, mm, in, px
+    
+    Medidas Relativas
+      em, ex, rem, vw, vh, %
+
+    Recomendada uso do "px" e "em". 
+      16px = 1em
+      font-size: 16px;
+      font-size: 1em;
+
+  Peso da fonte
+    font-weight: lighter / normal / bold / bolder / 100 - 900;
+
+  Estilos da fonte
+    font-style: italic;
+
+  Sublinhado da fonte
+    text-decoration: underline;
+
+
+  SHORTHAND FONT
+  
+    font-style - font-weight - fonbt-size - font-family
+
+    font: italic bolder 3em 'Work Sans'. sans-serif;
+
+  Fontes Externas
+    Tipos format()
+      -opentype (otf)
+      -truetype (ttf)
+      -embedded-opentype
+      -truetype-aat (Apple Advanced Typography)
+      -svr
+
+    ----------------------------------------------------------------
+    @font-face {
+      font-family: SuperPancake;
+      src: url(SuperPancake.ttf) format(truetype);
+    }
+    @font-face {
+      font-family: Momentz;
+      src: url(Momentz.otf) format(opentype);
+    }
+
+    h1 {
+      font-family: 'SuperPancake', Times, serif;
+    }
+    h2 {
+      font-family: 'Momentz', Times, serif;
+    }
+    ----------------------------------------------------------------
+  Ferramenta para capturar Fontes
+    Fonts Ninja
+
+    Fonte de imagens
+      whatfontis
+      myfonts
+
+================================================================
+ALINHAMENTO DE TEXTO
+
+    text-align: left;
+    text-align: center;
+    text-align: right;
+    text-align: justify;
+    text-indent: 30px;
+
+================================================================
+
+IDENTIFICADORES
+
+  ID
+    HTML
+    <h1 id="principal">Criando Sites com HTML</h1>
+
+    CSS
+    h1#principal {
+    text-align: center;
+    }
+  
+  Um ID só pode ser usado em um elemento.
+
+----------------------------------------------------------------
+
+  CLASS
+    HTML
+    <h1 class="principal">Criando Sites com HTML</h1>
+
+    CSS
+    .principal {
+    text-align: center;
+    }
+
+    Propriedades Herdadas
+    1° CSS externo
+    2° CSS interno
+    3° CSS Inline
+
+    1° TAG
+    2° CLASS
+    3° ID
+
+----------------------------------------------------------------
+  PSEUDO-CLASSES 
+
+  Realizar efeito ao realizar alguma ação.
+    div:hover {
+      background-color: black;
+    }
+  ------------------------------------------------------------
+    div > p {
+      display: none;
+    }
+
+    div:hover > p {
+      display: block;
+    }
+    ---------------------------------------------------------
+
+    #  = id
+    .  = class 
+    :  = pseudo-class
+    :: = pseudo-element
+    >  = clildren
+
+    ================================================================
+
+BOX MODEL
+
+  height - Altura
+  wight - Largura
+  border - Borda
+  padding - Preenchimento
+  margin - Margem
+  outline - Contorno / Traçado (Borda fora do elemento)
+
+  ----------------------------------------------------------------
+  Box-level (display: block)
+    Sempre se inicia em uma linha nova.
+    Ocupa toda a area da linha
+    Exempro "div, h1, header, main, nav"
+  ----------------------------------------------------------------
+  Inline-level
+    Não quebra linha
+    Continua na mesma linha
+    Exempro "span, a, strong, input, select"
+  ----------------------------------------------------------------
+  Margin
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin: auto;
+
+  Outline
+    outline-width: 5px;
+    outline-style: dashed;
+    outline-color: purple;
+  ----------------------------------------------------------------
+  
+  Gruping Tasgs
+    header
+    nav
+    main
+    footer
+    section
+    article
+    aside
+
+  ----------------------------------------------------------------
+  Box Shadow (Sombras)
+    box-shadow: 5px 5px 10px #222121;
+    box-shadow:inset 5px 5px 10px #222121; (Sombra interna)
+    sombra horizontal // sombra vertical // espalhamento // Cor
+    
+  ----------------------------------------------------------------
+  Vertices Arredondadas
+    border-radius: 10px;
+    border-radius: 50%;
+    border-radius: 10px 0 10px 0 ;
+    border-radius: 10px 30px ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+
+  ----------------------------------------------------------------
+  Bordas Decoradas
+      border: 20px solid black;
+      border-image-source:url('borda.png') ;
+      border-image-slice: 27;
+      border-image-repeat: repeat ou stretch;
+  
+=================================================================
+
+VARIAVEIS EM CSS
+
+  :root {
+  --cor0: #edf7f1;
+  --cor1: #D3F1DF;
+  --cor2: #85A98F;
+  --cor3: #5A6C57;
+  --cor4: #525B44;
+  --cor5: #2f3327;
+  }
+
+  background-color: var(--cor2);
+
+===================================================================
+
+RESPONSIVIDADE
+
+  min-width: 320px;
+  max-width: 1000px;
+  margin: auto;
+  width: 100%;
+
+  VIDEO Responsivo
+    div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+    }
+
+  div.video > iframe {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    width: 98%;
+    height: 96%;
+    }
+
+================================================================
+
+GIT / GITHUB

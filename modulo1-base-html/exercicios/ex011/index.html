@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mídias em HTML5</title>
+</head>
+<body>
+  <h1>Imagens dinâmicas</h1>
+  <p>Teste abrir esse site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+  <picture>
+    <source media="(max-width: 700px)" srcset="img/foto-p.png" type="image/png">
+    <source media="(max-width: 1000px)" srcset="img/foto-m.png" type="image/png">
+    <img src="img/foto-g.png" alt="Grande Flexivel">
+  </picture>
+
+  <h1>Reproduzindo Audio</h1>
+  <p>Vamos aprender a reproduzir áudios em HTML5</p>
+  <audio src="audio/LonelyMan-AlexHamlin.mp3" controls></audio>
+  <audio controls>
+    <source src="audio/KeysToUnravel-TheSoundlings.mp3" type="audio/mp3"> 
+  </audio>
+
+  <h1>Trabalhando com Video</h1>
+  <p>Carregando videos internos no meu site com HTML5</p>
+  <video id="video" controls preload="auto" autoplay loop height="500">
+    <source src="video/Meu-Video-social.mp4" type="video/mp4">
+    <source src="video/Meu-Video-social.mkv" type="video/mkv">
+
+    <!-- Para carregar legenda -->
+    <track label="English" kind="captions" srclang="en" default>
+  </video>
+
+  <h1>Adicionando videos do Youtube</h1>
+  <p>Carregando video do Yputube com codigo iframe em HTML5</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/HWu1tz3oOqk?si=EwsaYGum36-xZ-ie&amp;start=9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
