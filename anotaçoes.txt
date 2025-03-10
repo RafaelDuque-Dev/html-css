@@ -488,4 +488,6 @@ RESPONSIVIDADE
 
 ================================================================
 
-GIT / GITHUB
+IMAGENS DE FUNDO
+
+background-image: url('pattern003.png');
