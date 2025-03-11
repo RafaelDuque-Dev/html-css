@@ -491,3 +491,20 @@ RESPONSIVIDADE
 IMAGENS DE FUNDO
 
 background-image: url('pattern003.png');
+
+TAMANHOS
+  background-size: 500px 500px;
+  background-repeat: no-repeat, repeat-x, repeat-y;
+
+POSIÇÃO
+  div#q1 
+  background-position:  left top;
+
+  div#q2 
+    background-position:  left center;
+
+  div#q3 
+    background-position:  right bottom;
+
+  div#q4 
+    background-position:  center center;
