@@ -508,3 +508,8 @@ POSIÇÃO
 
   div#q4 
     background-position:  center center;
+
+
+PARA NAO TER CORTE NA IMAGEM
+  background-size: contain;
+  background-size: cover
