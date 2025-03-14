@@ -513,3 +513,13 @@ POSIÇÃO
 PARA NAO TER CORTE NA IMAGEM
   background-size: contain;
   background-size: cover
+
+
+FIXAR IMAGEM DE FUNDO NA TELA
+
+  background-attachment: fixed;
+
+SHORTHAND - BACKGROUND 
+  COLOR > IMAGEM > POSITION > REPEAT > ATTACHMENT
+    background: black url(wallpaper002.jpg) center center no-repeat fixed;
+    background-size: cover;
