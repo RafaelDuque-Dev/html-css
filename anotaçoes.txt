@@ -604,3 +604,9 @@ CENTRALIZAÇÃO vertical
       <td>C4</td>
     </tr>
   </table>
+
+
+  ESTRURTURA DE TABELAS grandes
+    thead
+    tbody
+    tfoot
