@@ -638,3 +638,25 @@ CENTRALIZAÇÃO vertical
     <td colspan="2">B</td>
 
     <td rowspan="3">F</td>
+
+  DESTACANDO COLUNAS
+
+    <colgroup>
+      <col class="cnome">
+      <col class="csexo">
+      <col class="cidade">
+      <col class="cprof">
+    </colgroup>
+    
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Sexo</th>
+      <th scope="col">Idade</th>
+      <th scope="col">Profissão</th>
+    </tr>
+
+  TABELA RESPONSIVA
+
+    div#tabela {
+      overflow-x: auto;
+    }
