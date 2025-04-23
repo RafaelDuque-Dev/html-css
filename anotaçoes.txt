@@ -683,3 +683,5 @@ CENTRALIZAÇÃO vertical
 
     <a href="pag001.html" target="frame">Primeira pagina</a>
     <iframe src="" frameborder="0" name="frame"></iframe>
+
+    Usar "srcdoc" para adicionar conteudo estatico iniciar do iframe
