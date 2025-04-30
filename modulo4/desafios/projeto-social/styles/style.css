@@ -13,9 +13,10 @@ html, body {
 }
 
 body {
-  background-image: url(../img/fundo-madeira.jpg);
+  background-image: url(../img/teste3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 main {
