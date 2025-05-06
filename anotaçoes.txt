@@ -685,3 +685,22 @@ CENTRALIZAÇÃO vertical
     <iframe src="" frameborder="0" name="frame"></iframe>
 
     Usar "srcdoc" para adicionar conteudo estatico iniciar do iframe
+
+
+  =====================================================================
+  
+  FORMULARIOS
+
+  <form autocomplete="off">
+
+    <p><label for="inome">Nome: </label>
+      <input type="text" name="nome" id="inome" title="Digite seu nome" placeholder="Digite seu nome">
+    </p>
+
+    <p><label for="isobrenome">Sobrenome:</label> 
+      <input type="text" name="sobrenome" id="isobrenome" title="Digite seu sobrenome" placeholder="Digite seu sobrenome">
+    </p>
+
+    <p><input type="submit" value="Enviar"></p>
+
+  </form>
