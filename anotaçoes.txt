@@ -704,3 +704,11 @@ CENTRALIZAÇÃO vertical
     <p><input type="submit" value="Enviar"></p>
 
   </form>
+
+  -------------------------------------------------------------
+  METODOS
+
+  GET (Padrão)
+    method="get"
+  POST (não mostra o digitado na URL)
+    method="post"
