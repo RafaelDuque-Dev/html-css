@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <p>
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome" required maxlength="30" title="Digite seu nome" placeholder="Digite seu nome" autocomplete="name">
+      </p>
+      <label for="iemail">Email</label>
+      <input type="email" name="email" id="iemail" required maxlength="30" title="Digite seu e-mail" placeholder="Digite seu e-mail" autocomplete="email">
+          </p>
+          <p>
+      <label for="itelefone">Telefone</label>
+      <input type="tel" name="telefone" id="itelefone" required maxlength="15" title="Digite seu telefone" placeholder="(xx) xxxxx-xxxx" autocomplete="tel" pattern="^${0}-[0-9]{5}-[0-9]{4}$" title="Formato: (xx) xxxxx-xxxx">
+          </p>
+          <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </fieldset>
+  </form>
+</body>
+</html>
