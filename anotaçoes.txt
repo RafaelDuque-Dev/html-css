@@ -735,3 +735,137 @@ CENTRALIZAÇÃO vertical
       <input type="reset" value="Limpar">
     </fieldset>
   </form>
+
+  --------------------------------------------------------------------
+    USUARIO E SENHA
+
+    <p>
+      <label for="iusu">Usuario</label>
+      <input type="text" name="usuario" id="iusu" required title="Digite seu nome" placeholder="Digite seu nome">
+    </p>
+    <p>
+      <label for="isen">Senha:</label>
+      <input type="password" name="sen" id="isen" required title="Digite sua senha" placeholder="Digite sua senha">
+    </p>
+
+  ---------------------------------------------------------------------
+    MEDIA / DATA
+
+    <p>
+      <label for="inome">Nome</label>
+      <input type="text" name="nome" id="inome" required maxlength="30" title="Digite seu nome" placeholder="Digite seu nome" autocomplete="name">
+    </p>
+    <p>
+      <label for="imedia">Media</label>
+      <input type="number" name="media" id="imedia" min="0" max="10" step="0.1" required title="Digite sua media" placeholder="0 a 10" autocomplete="off" step="0.5" value="5">
+    </p>
+    <p>
+      <label for="imes">Periodo Letivo</label>
+      <input type="date" name="mes" id="imes" required title="Digite o periodo letivo" placeholder="Periodo Letivo" autocomplete="off">
+    </p>
+
+  ----------------------------------------------------------------------
+    EMAIL / TELEFONE
+
+    <p>
+      <label for="inome">Nome</label>
+      <input type="text" name="nome" id="inome" required maxlength="30" title="Digite seu nome" placeholder="Digite seu nome" autocomplete="name">
+    </p>
+      <label for="iemail">Email</label>
+      <input type="email" name="email" id="iemail" required maxlength="30" title="Digite seu e-mail" placeholder="Digite seu e-mail" autocomplete="email">
+    </p>
+    <p>
+      <label for="itelefone">Telefone</label>
+      <input type="tel" name="telefone" id="itelefone" required maxlength="15" title="Digite seu telefone" placeholder="(xx) xxxxx-xxxx" autocomplete="tel" pattern="^${0}-[0-9]{5}-[0-9]{4}$" title="Formato: (xx) xxxxx-xxxx">
+    </p>
+
+  ------------------------------------------------------------------------
+    CHECKBOX / RADIO
+
+    <fieldset>
+      <legend>Sexo</legend>
+      <input type="radio" name="Sexo" id="isxmas" value="masculino" checked> <label for="isxmas">Masculino</label>
+      <input type="radio" name="Sexo" id="isxfem" value="feminino"> <label for="isxfem">Feminino</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Esportes Favoritos</legend>
+      <input type="checkbox" name="esbas" id="iesbas" ><label for="iesbas">Basquete</label><br>
+      <input type="checkbox" name="esfut" id="iesfut" ><label for="iesfut">Futebol</label> <br>
+      <input type="checkbox" name="esvolei" id="iesvolei" ><label for="iesvolei">Voleibol</label> <br>
+      <input type="checkbox" name="esnat" id="iesnat" ><label for="iesnat">Natacao </label><br>
+      <input type="checkbox" name="esoutros" id="iesoutros" ><label for="iesoutros">Outros</label> <br>
+    </fieldset>
+
+  ------------------------------------------------------------------------
+    COR / NIVEL / ARQUIVO
+
+    <form action="" method="post" autocomplete="on">
+    <p>
+      <label for="icor">Cor: </label>
+      <input type="color" name="cor" id="icor" value="#ff0000">
+    </p>
+    <p>
+      <label for="inivel">Nivel de Satisfação: </label>
+      <input type="range" name="nivel" id="inivel" min="0" max="10" step="1" value="5">
+    </p>
+    <P>
+      <label for="ifoto">Foto de perfil: </label>
+      <input type="file" name="Foto" id="ifoto" accept="image/*">
+    </P>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+  </form>
+
+  -------------------------------------------------------------------------
+  SELECT / LISTA / MENSSAGEM
+
+    <form action="" method="post" autocomplete="on">
+    <p>
+      <label for="iest">Estado</label>
+
+      <select name="estado" id="iest">
+
+        <option value="" selected>--- Escolha ---</option>
+        <optgroup label="Regiao Sudeste">
+          <option value="es">Espírito Santo</option>
+          <option value="sp">São Paulo</option>
+          <option value="rj">Rio de Janeiro</option>
+          <option value="mg">Minas Gerais</option>
+        </optgroup>
+
+        <optgroup label="Regiao Centro-Oeste">
+          <option value="df">Distrito Federal</option>
+          <option value="go">Goiás</option>
+          <option value="ms">Mato Grosso do Sul</option>
+          <option value="mt">Mato Grosso</option>
+        </optgroup>
+
+      </select>
+    </p>
+
+    <p>
+      <label for="iprof">Profissão</label>
+      <input type="text" name="prof" id="iprof" list="profissoes">
+      <datalist id="profissoes">
+        <option value="ADM">Administrador</option>
+        <option value="ENG">Engenheiro</option>
+        <option value="MED">Médico</option>
+        <option value="DIR">Advogado</option>
+        <option value="PROF">Professor</option>
+        <option value="TEC">Técnico</option>
+      </datalist>
+    </p>
+
+        <p>
+      <label for="imsg">Menssagem: </label>
+      <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+  </form>
