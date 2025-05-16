@@ -869,3 +869,14 @@ CENTRALIZAÇÃO vertical
       <input type="reset" value="Limpar">
     </p>
   </form>
+
+
+  ----------------------------------------------------------------------
+  OUTPUT
+
+    <p>
+      <label for="inum">Numero: </label>
+      <input type="range" name="num" id="inum" min="0" max="10" step="1" value="5" oninput="output.value = inum.value">
+      <output name="num" id="output">5</output>
+    </p>
+
