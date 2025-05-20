@@ -881,8 +881,10 @@ CENTRALIZAÇÃO vertical
     </p>
 
 
-    ==============================================================
+===================================================================
 
-    MEDIAS QUERIES
+MEDIAS QUERIES
 
-
+    <!-- Chamadas de Media Query -->
+    <link rel="stylesheet" href="styles/tela.css" media="screen">
+    <link rel="stylesheet" href="styles/tela-print.css" media="print">
