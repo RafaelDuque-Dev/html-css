@@ -885,6 +885,15 @@ CENTRALIZAÇÃO vertical
 
 MEDIAS QUERIES
 
+  MEDIAS TYPE
+
     <!-- Chamadas de Media Query -->
+    <link rel="stylesheet" href="styles/tela.css" media="all">
     <link rel="stylesheet" href="styles/tela.css" media="screen">
     <link rel="stylesheet" href="styles/tela-print.css" media="print">
+
+  --------------------------------------------------------------------------
+  ORIENTAÇÃO DE TELA 
+
+    <link rel="stylesheet" href="styles/retrato.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="styles/paisagem.css" media="screen and (orientation: landscape)">
