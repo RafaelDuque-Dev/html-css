@@ -897,3 +897,21 @@ MEDIAS QUERIES
 
     <link rel="stylesheet" href="styles/retrato.css" media="screen and (orientation: portrait)">
     <link rel="stylesheet" href="styles/paisagem.css" media="screen and (orientation: landscape)">
+
+  --------------------------------------------------------------------------
+
+    /* Estilo para telas retrato */
+    @media screen and (orientation: portrait) {
+      body {
+        background-image: url(img/cev-portrait.jpg);
+        background-position:  center bottom;
+      }
+    }
+
+    /* Estilo para telas retrato */
+    @media screen and (orientation: landscape) {
+      body {
+        background-image: url(img/cev-landscape.jpg);
+        background-position:  left top;
+      }
+    }
