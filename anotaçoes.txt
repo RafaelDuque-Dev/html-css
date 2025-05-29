@@ -915,3 +915,35 @@ MEDIAS QUERIES
         background-position:  left top;
       }
     }
+
+    -----------------------------------------------------------------------
+    MOBILE FIRST
+
+      img#iphone {display: block;}
+      img#tablet {display: none;}
+      img#print {display: none;}
+      img#pc {display: none;}
+      img#tv {display: none;}
+
+
+      Device breakpoints
+
+        /* Dispositivos pequenos (celulares em modo retrato) */
+        @media (max-width: 600px) { 
+          /* Seu CSS aqui */
+        }
+
+        /* Dispositivos médios (tablets) */
+        @media (min-width: 601px) and (max-width: 900px) { 
+          /* Seu CSS aqui */
+        }
+
+        /* Dispositivos grandes (laptops/desktops) */
+        @media (min-width: 901px) and (max-width: 1200px) { 
+          /* Seu CSS aqui */
+        }
+
+        /* Telas muito grandes */
+        @media (min-width: 1201px) { 
+          /* Seu CSS aqui */
+        }
