@@ -4,12 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu hamburguer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/media_querys.css">
+  
 </head>
-<body>
+<body onresize="mudouTamanho()">
   <header>
     <h1>Meu Site</h1>
-    <menu>
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    <menu id="menu">
       <ul>
         <li><a href="#">Opção 1</a></li>
         <li><a href="#">Opção 2</a></li>
@@ -27,5 +31,27 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quasi numquam maxime quia quas in quis itaque odit labore voluptates commodi quaerat aliquam repellat neque facilis quisquam ab, laudantium molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloremque voluptates repudiandae veniam velit eaque accusamus, ullam reiciendis fuga dolorum consequuntur voluptatem, nesciunt exercitationem provident, libero ad? Perspiciatis, corrupti voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a officiis quasi distinctio sapiente nisi minima illum velit magni ullam totam cum suscipit, atque maxime. Quos minus iste aspernatur iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quasi numquam maxime quia quas in quis itaque odit labore voluptates commodi quaerat aliquam repellat neque facilis quisquam ab, laudantium molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloremque voluptates repudiandae veniam velit eaque accusamus, ullam reiciendis fuga dolorum consequuntur voluptatem, nesciunt exercitationem provident, libero ad? Perspiciatis, corrupti voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a officiis quasi distinctio sapiente nisi minima illum velit magni ullam totam cum suscipit, atque maxime. Quos minus iste aspernatur iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quasi numquam maxime quia quas in quis itaque odit labore voluptates commodi quaerat aliquam repellat neque facilis quisquam ab, laudantium molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloremque voluptates repudiandae veniam velit eaque accusamus, ullam reiciendis fuga dolorum consequuntur voluptatem, nesciunt exercitationem provident, libero ad? Perspiciatis, corrupti voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a officiis quasi distinctio sapiente nisi minima illum velit magni ullam totam cum suscipit, atque maxime. Quos minus iste aspernatur iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quasi numquam maxime quia quas in quis itaque odit labore voluptates commodi quaerat aliquam repellat neque facilis quisquam ab, laudantium molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloremque voluptates repudiandae veniam velit eaque accusamus, ullam reiciendis fuga dolorum consequuntur voluptatem, nesciunt exercitationem provident, libero ad? Perspiciatis, corrupti voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint a officiis quasi distinctio sapiente nisi minima illum velit magni ullam totam cum suscipit, atque maxime. Quos minus iste aspernatur iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quasi numquam maxime quia quas in quis itaque odit labore voluptates commodi quaerat aliquam repellat neque facilis quisquam ab, laudantium molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloremque voluptates repudiandae veniam velit eaque accusamus, ullam reiciendis fuga dolorum consequuntur </p>
     </article>
   </main>
+
+  <script>
+    function clickMenu() {
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+        burguer.textContent = "menu";
+      } else {
+        menu.style.display = "block";
+        burguer.textContent = "close";
+      }
+    }
+
+    function mudouTamanho() {
+      if (window.innerWidth > 768) {
+        menu.style.display = "block";
+        burguer.textContent = "close";
+      } else {
+        menu.style.display = "none";
+        burguer.textContent = "menu";
+      }
+    }
+  </script>
 </body>
 </html>
